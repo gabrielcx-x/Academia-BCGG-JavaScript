@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro Cliente</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Academia BCGGP </title>
+    <body>
+        <header>
+            <h1><a>Academia BCGGP</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#cliente">Cliente</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+</head>
+<body>
+    <h1>Cadastro Cliente</h1>
+    <form id="myForm" method="post" action="/submit">
+        <label for="nomecliente">Nome Cliente:</label>
+        <input type="text" id="nomecliente" name="nomecliente" required><br><br>
+
+        <label for="documentocliente">Número de identificação pessoal (RG ou CPF):</label>
+        <input type="text" id="documentocliente" name="documentocliente" required><br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form><br>
+
+    <table border="1">
+        <thead>
+            <th>ID</th>
+            <th>Nome Cliente</th>
+            <th>Número de identificação pessoal (RG ou CPF)</th>
+            <th>Ações</th>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+
+
+    <footer>
+        <p>&copy; 2023 Academia BCGGP. Todos os direitos reservados.</p>
+    </footer>
+
+
+    <script src="./scriptcliente.js"></script>
+</body>
+</html>
