@@ -1,4 +1,4 @@
-Este projeto foi feito na linguagem de Java Script, para ser um sistema de uma Academia, com conexão ao banco de dados. 
+Este projeto foi feito para ser um sistema de uma Academia, com conexão ao banco de dados. 
 
 
 Para conseguir a conexão com o banco de dados você devera utilizar o XAMP e inserir esse código para criar as tabelas:
